@@ -1,0 +1,10 @@
+---
+name: Acquisition plans for ssm_acquire cli.
+distros:
+  win:
+    commands:
+      - cd C:\\Windows\\Temp
+      - del capture.aff4
+      - del winpmem-2.1.post4.exe
+      - wget https://github.com/google/rekall/releases/download/v1.5.1/winpmem-2.1.post4.exe
+      - winpmem-2.1.post4.exe --output C:\\Windows\\Temp\\capture.aff4
